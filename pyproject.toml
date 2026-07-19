@@ -1,0 +1,35 @@
+[project]
+name = "fgc26robotlab"
+version = "0.1.0"
+description = "Phòng lab phân tích dữ liệu robot FGC 2026 của Đội tuyển Việt Nam"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.0",
+    "ipywidgets>=8.1",
+    "jupyterlab>=4.4",
+    "matplotlib>=3.10",
+    "nbconvert>=7.16",
+    "numpy>=2.2",
+    "pandas>=2.2",
+    "plotly>=6.0",
+    "scipy>=1.15",
+    "seaborn>=0.13.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.11",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

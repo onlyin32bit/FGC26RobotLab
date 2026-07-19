@@ -1,0 +1,25 @@
+# Môi trường và bộ nhớ đệm Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Dữ liệu sinh ra và báo cáo xuất bản
+data/processed/*
+!data/processed/.gitkeep
+figures/*
+!figures/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# Dữ liệu thô thường lớn; chỉ giữ file hướng dẫn
+data/raw/*
+!data/raw/README.md
+
+# Tệp hệ điều hành và trình soạn thảo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
