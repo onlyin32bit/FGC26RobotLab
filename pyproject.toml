@@ -1,7 +1,7 @@
 [project]
 name = "fgc26robotlab"
 version = "0.1.0"
-description = "Phòng lab phân tích dữ liệu robot FGC 2026 của Đội tuyển Việt Nam"
+description = "Phân tích dữ liệu robot FGC 2026 của Team Vietnam"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -28,6 +28,7 @@ pythonpath = ["src"]
 testpaths = ["tests"]
 
 [tool.ruff]
+extend-exclude = ["notebooks"]
 line-length = 100
 target-version = "py312"
 

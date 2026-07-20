@@ -55,7 +55,7 @@ FGC26RobotLab/
 ├── reports/              # Báo cáo HTML/PDF đã đóng băng
 ├── scripts/
 │   └── tao_notebook_mau.py
-├── src/fgc_analysis/     # Hàm dùng chung
+├── src/analysis/         # Hàm phân tích dùng chung
 └── tests/                # Kiểm thử công thức
 ```
 
@@ -127,6 +127,6 @@ reports/ và sổ tay kỹ thuật
 - Không nhập tay kết quả đã tính vào notebook.
 - Mọi biểu đồ phải có đơn vị, mã lần chạy và mã cấu hình.
 - Mọi lần chạy bị loại vẫn phải được lưu cùng lý do.
-- Các công thức dùng chung phải đặt trong `src/fgc_analysis/`.
+- Các công thức dùng chung phải đặt trong `src/analysis/`.
 - Notebook phải chạy được từ đầu sau khi khởi động lại kernel.
 - Luôn ghi phiên bản phần mềm và cấu hình phần cứng.
