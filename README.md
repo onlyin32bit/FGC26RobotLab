@@ -46,6 +46,7 @@ FGC26RobotLab/
 │   ├── raw/              # CSV gốc từ robot, không chỉnh sửa
 │   └── processed/        # Bảng được sinh từ phân tích
 ├── figures/              # Biểu đồ xuất từ notebook
+├── schema/                # Master schema cho mọi CSV và summary
 ├── notebooks/
 │   ├── TEMPLATE.ipynb    # Mẫu cho kịch bản mới
 │   ├── DT01.ipynb        # Hiệu chuẩn encoder và quãng đường
@@ -110,6 +111,14 @@ Kết luận kỹ thuật
         ↓
 reports/ và sổ tay kỹ thuật
 ```
+
+## Master schema
+
+Mọi kịch bản dùng [master experiment schema](schema/SCHEMA.md).
+Time-series CSV luôn có cùng envelope `fgc-ts-v1`; cột riêng của scenario chỉ
+được thêm sau envelope với tiền tố `scenario_`. `data/run_summary.csv` dùng
+`fgc-summary-v1`, một hàng cho mỗi metric, nên không có header tóm tắt riêng
+theo scenario.
 
 ## Thêm một kịch bản
 
